@@ -1,0 +1,18 @@
+{
+    "appDescription": {
+       "description": "Ultimatix login helper",
+       "message": "No more waiting for 2fa"
+    },
+    "appName": {
+       "description": "Ultimatix login helper",
+       "message": "No more waiting for 2fa"
+    },
+    "appShortName": {
+       "description": "Ultimatix 2FA Helper",
+       "message": "No more waiting"
+    },
+    "title": {
+       "description": "Ultimatix 2FA helper",
+       "message": "No more waiting ...."
+    }
+ }

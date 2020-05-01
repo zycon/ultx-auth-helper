@@ -6,10 +6,15 @@
    "manifest_version":2,
    "browser_action": {
       "default_icon": {
-         "38": "apps/ultimatix.png"
+         "38": "apps/2fa.icon.png"
       },
       "default_title": "Ultimatix Login helper"
    },
+   "content_scripts": [
+    {
+      "matches": ["https://auth.ultimatix.net/*"],
+      "js": ["login.js"]
+    }],
    "background": {
      "scripts": [
        "login.js"
@@ -17,11 +22,10 @@
      "persistent": true
    },
    "icons": {
-      "128": "apps/ultimatix.png" 
+      "128": "apps/2fa.icon.png" 
    },
    "permissions": [
-     "https://*/*",
-     "http://*/*",
-     "tabs"
+     "activeTab",
+     "https://auth.ultimatix.net/*"
    ]
  }

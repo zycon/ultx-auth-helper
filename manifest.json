@@ -1,25 +1,27 @@
 {
-    "name": "Ultimatix Login Helper",
-    "version": "1.0",
-    "description": "No more waiting for 2fa!",
-    "manifest_version": 2,
-    "background": {
-        "scripts": [ "apps/login.js" ]
-     },
-     "browser_action": {
-        "default_icon": {
-           "38": "apps/ultimatix.png"
-        },
-        
-        "default_title": "Ultimatix Login helper"
-     },
-     "icons": {
-        "128": "apps/ultimatix.png" 
-     },
-     "permissions": [
-      "tabs",
-      "https://auth.ultimatix.net/"
+   "name": "Ultimatix Login Helper",
+   "version": "1.0",
+   "description": "No more waiting for 2fa!",
+   "default_locale": "en",
+   "manifest_version":2,
+   "browser_action": {
+      "default_icon": {
+         "38": "apps/ultimatix.png"
+      },
+      "default_title": "Ultimatix Login helper"
+   },
+   "background": {
+     "scripts": [
+       "login.js"
      ],
-     "default_locale": "en",
-     "content_security_policy":"script-src 'self'; object-src 'self'"
-  }
+     "persistent": true
+   },
+   "icons": {
+      "128": "apps/ultimatix.png" 
+   },
+   "permissions": [
+     "https://*/*",
+     "http://*/*",
+     "tabs"
+   ]
+ }

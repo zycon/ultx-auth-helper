@@ -1,1 +1,0 @@
-$('#pwdModal').modal('hide');
